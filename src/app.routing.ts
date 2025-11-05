@@ -6,6 +6,7 @@ import { MusicaComponent } from "./components/musica.component/musica.component"
 import { Routes } from "@angular/router";
 import { RouterModule } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core";
+import { NotfoundComponent } from "./components/notfound.component/notfound.component";
 
 //necesitamos un array de tipo routes con las rutas
 const appRoutes:Routes=
@@ -21,6 +22,10 @@ const appRoutes:Routes=
     {
         path:"musica",
         component:MusicaComponent
+    },
+    {
+        path:"**",
+        component:NotfoundComponent
     }
 ]
 
