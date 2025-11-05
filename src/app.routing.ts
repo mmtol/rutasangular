@@ -7,6 +7,7 @@ import { Routes } from "@angular/router";
 import { RouterModule } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core";
 import { NotfoundComponent } from "./components/notfound.component/notfound.component";
+import { NumerodobleComponent } from "./components/numerodoble.component/numerodoble.component";
 
 //necesitamos un array de tipo routes con las rutas
 const appRoutes:Routes=
@@ -24,9 +25,13 @@ const appRoutes:Routes=
         component:MusicaComponent
     },
     {
+        path:"numerodoble",
+        component:NumerodobleComponent
+    },
+    {
         path:"**",
         component:NotfoundComponent
-    }
+    },
 ]
 
 //desde esta clase exportamos el array de routes como provider
