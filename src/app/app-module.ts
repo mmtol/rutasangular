@@ -8,6 +8,7 @@ import { HomeComponent } from '../components/home.component/home.component';
 import { CineComponent } from '../components/cine.component/cine.component';
 import { MusicaComponent } from '../components/musica.component/musica.component';
 import { MenuComponent } from '../components/menu.component/menu.component';
+import { TablamultiplicarComponent } from '../components/tablamultiplicar.component/tablamultiplicar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MenuComponent } from '../components/menu.component/menu.component';
     HomeComponent,
     CineComponent,
     MusicaComponent,
-    MenuComponent
+    MenuComponent,
+    TablamultiplicarComponent
   ],
   imports: [
     BrowserModule, routing

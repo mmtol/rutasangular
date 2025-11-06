@@ -1,6 +1,6 @@
 <div>
     <ul>
-        <li>
+        <!-- <li>
             <a [routerLink]="['/']">Home</a>
         </li>
         <li>
@@ -14,6 +14,13 @@
         </li>
         <li>
             <a [routerLink]="['/numerodoble/777']">Numero doble con param</a>
-        </li>
+        </li> -->
+
+        @for (num of nums; track num)
+        {
+            <li>
+                <a [routerLink]="['/tablamultiplicar', num]">Tabla del {{num}}</a>
+            </li>
+        }
     </ul>
 </div>
