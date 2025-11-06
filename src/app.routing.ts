@@ -29,6 +29,10 @@ const appRoutes:Routes=
         component:NumerodobleComponent
     },
     {
+        path:"numerodoble/:num",
+        component:NumerodobleComponent
+    },
+    {
         path:"**",
         component:NotfoundComponent
     },
