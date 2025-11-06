@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Params } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component(
 {
@@ -15,7 +16,7 @@ export class NumerodobleComponent implements OnInit
   public doble: number;
   public num!: number;
 
-  constructor(private _activateRoute: ActivatedRoute)
+  constructor(private _activateRoute: ActivatedRoute, private _router:Router)
   {
     this.doble = 0;
   }
@@ -34,5 +35,10 @@ export class NumerodobleComponent implements OnInit
           this.doble = this.num * 2;
         }
       })  
+  }
+
+  goToHome(): void
+  {
+    this._router.navigate(["/"]);
   }
 }
